@@ -1,10 +1,25 @@
 1. Seleziona tutti gli ospiti che sono stati identificati con la carta di
 identità
+SELECT * 
+FROM `ospiti` 
+WHERE `Document_type` = 'CI';
+
 2. Seleziona tutti gli ospiti che sono nati dopo il 1988
+SELECT * 
+FROM `ospiti` 
+WHERE `date_of_birth` > '1988-12-31';
+
 3. Seleziona tutti gli ospiti che hanno più di 20 anni (al momento
 dell’esecuzione della query)
+SELECT * 
+FROM `ospiti` WHERE
+`date_of_birth` < '2001-05-25';
+
 4. Seleziona tutti gli ospiti il cui nome inizia con la D
+SELECT * FROM `ospiti` WHERE `name` LIKE "D%";
+
 5. Calcola il totale incassato degli ordini accepted
+
 6. Qual è il prezzo massimo pagato?
 7. Seleziona gli ospiti riconosciuti con patente e nati nel 1975
 8. Quanti paganti sono anche ospiti?
