@@ -43,3 +43,5 @@ FROM `paganti`
 WHERE `ospite_id` IS NOT NULL;
 
 9. Quanti posti letto ha l’hotel in totale?
+SELECT SUM(beds) 
+FROM `stanze`
